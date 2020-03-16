@@ -1,0 +1,92 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/utilities";
+
+
+// Optional
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+
+.icon-size{
+    width: 24px;
+    height:24px;
+}
+
+.bg-cover{
+    background-position: center center; 
+    background-size: cover;
+}
+
+.box1{
+    width: 100%;
+    height:496px; 
+}
+
+.box3{
+    width: 100%;
+    height: 460px;
+}
+
+
+.card{
+   position: relative; 
+}
+
+.custom-card{
+    background-color:rgba(255, 225, 128, 0.6);
+    color:#3F5D45;
+    border: none;
+    height: 200px;
+}
+
+.custom-card2{
+    background-color:rgba(63, 93, 69, 0.6);
+    color:white;
+    border: none;
+}
+
+.custom-card2:hover{
+    background-color:rgba(255, 225, 128, 0.6);
+    color:#3F5D45;
+    border: none;
+}
+
+.card-bg{
+    position: absolute;
+    top:0px;
+    left:0px; 
+    right:0px; 
+    bottom:0px;
+    z-index:-1;
+    overflow: hidden;
+}
+
+.card-bg:after{
+    content:"";
+    position: absolute;
+    top:-20px;
+    left:-20px; 
+    right:-20px; 
+    bottom:-20px;
+    filter:blur(5px);
+    background-image: url(https://bit.ly/2QiWeQW);
+    background-position: center center; 
+    background-size: cover; 
+}
+
+
+.second{
+  z-index:1;
+  position:relative;
+  margin-top:-50px;
+  margin-bottom:50px;
+}
+
+.icon-box{
+    width: 40px;
+    height:48px;
+}
