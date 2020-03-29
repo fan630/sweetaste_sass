@@ -1,0 +1,84 @@
+$complete: #2ECC71;
+// $active: #3498DB;
+$mute: #DFE3E4;
+
+.progress {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+  width: 50%;
+  color: darken($mute, 33%);
+  > li {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    font-size: 0.8em;
+    &:before {
+      content: attr(data-step);
+      display: block;
+      margin: 0 auto;
+      background: $mute;
+      width: 3em;
+      height: 3em;
+      text-align: center; //IE8 doesn't inherit this style
+      margin-bottom: 0.25em;
+      line-height: 3em;
+      border-radius: 100%;
+      position: relative;
+      z-index: 1000;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      background: $mute;
+      width: 100%;
+      height: 0.5em;
+      top: 1.25em;
+      left: 50%;
+      margin-left: 1.5em\9;
+    }
+    &:last-child:after {
+      display: none;
+    }
+    // &.is-complete {
+    //   color: $complete;
+    //   &:before,
+    //   &:after {
+    //     color: $primary;
+    //     border:1px solid#fff;
+    //     background: $primary;
+    //   }
+    // }
+    &.is-active {
+      // color: $active;
+      &:before {
+        color: #FFF;
+        border:1px solid#fff;
+        background: $primary;
+      }
+    }
+  }
+}
+  /**
+   * Needed for IE8
+   */
+  .progress__last:after {
+    display: none!important;
+  }
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 1.5em;
+}
+a {
+  // color: $active;
+  // text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

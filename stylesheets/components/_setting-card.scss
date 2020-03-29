@@ -1,0 +1,17 @@
+.setting-card{
+    background: $primary;
+    .setting-body{
+        .setting-social{
+            background: $primary-200;
+        }
+        .setting-title{
+            padding-top:40px; 
+            padding-bottom: 30px;
+            font-size: $font-size-base*2.25; 
+            color: white;
+        }
+    }
+    .setting-footer{
+        color: $primary;
+    }
+}

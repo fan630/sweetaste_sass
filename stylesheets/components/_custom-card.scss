@@ -1,0 +1,51 @@
+.customCard{
+    position: relative;
+    border: none;
+    height: 250px;
+    &__title{
+        &--style{
+            writing-mode: vertical-rl;
+            letter-spacing: 10px;
+            margin-bottom: 0;
+            padding-top:50px;
+        }
+    }
+    &--style{
+        margin-top:-50px;
+        padding-bottom:50px;
+        &--first{
+            background-color:rgba(255, 225, 128, 0.6);
+            color:$primary;
+        }
+        &--second{
+            background-color:rgba(63, 93, 69, 0.6);
+            color:lighten($primary,100%);
+            &:hover{
+                background-color:rgba(255, 225, 128, 0.6);
+                color:$primary;
+            }
+        }
+    }
+    &--bg{
+        position: absolute;
+        top:0px;
+        left:0px; 
+        right:0px; 
+        bottom:0px;
+        z-index:-2;
+        overflow: hidden;
+        &:after{
+            content:"";
+            position: absolute;
+            top:-20px;
+            left:-20px; 
+            right:-20px; 
+            bottom:-20px;
+            filter:blur(5px);
+            background-image: url('https://bit.ly/2QiWeQW');
+            @include background-basic;
+        }
+    }
+}
+
+

@@ -1,0 +1,33 @@
+.cartMsg__second{
+   &__body{
+      background-color:white;
+      &--color{
+          color:$primary-500;
+      }
+   }
+   &--title{
+        background-color: $primary-200;
+        padding:10px 0;
+        text-align: center;
+        font-size: $font-size-base*1.75; 
+        color: $primary-500;
+   }
+}
+
+.formCard{
+    &--body{
+        background-color: $primary;
+    }
+    &--title{
+        color:white; 
+        margin-bottom: 0;
+        text-align: left;
+        font-size: $font-size-base*2;
+    }
+    &--footer{
+        &--style{
+            color:$primary;
+            font-size: $font-size-base*1.25; 
+        }
+    }
+}
