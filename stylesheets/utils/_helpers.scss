@@ -4,6 +4,10 @@
     background-size: cover;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
 // write-mode
 .writing-vertical {
   writing-mode: vertical-rl;
@@ -13,6 +17,7 @@
     writing-mode: vertical-rl;
   }
 }
+
 
 
 // color
@@ -38,6 +43,10 @@
 
 .bg-primary-light{
     background-color: $primary-200;
+}
+
+.btn-brand-light {
+  @include button-variant($white, $primary-200);
 }
 
 // font-size

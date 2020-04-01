@@ -23,7 +23,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light bg-white">
         <div class="container">
             <a
                 class="navbar-brand d-none d-md-block"
@@ -91,98 +91,48 @@
     </nav>
    
     <div class="container mt-md-5">
-        <div class="row">
+        <div class="row carts">
             <div class="col-md-8 cart">
                 <div class="h4 bg-sweet-light cart--title text-center py-3">您的購物車</div>
                 <div class="cart__body">
-                    <div class="cart__img media">
-                        <img
-                            src="https://bit.ly/2zKOP7w"
-                            class="mr-3"
-                            height="110px"
-                            style="max-width:100%"
-                        >
+                    <div class="media d-flex align-items-center">
+                        <div
+                            class="mr-3 cart__img flex-grow-1 flex-md-grow-0"
+                            style="background-image:url(https://bit.ly/2zKOP7w)"
+                        ></div>
                     
-                        <div class="media-body d-flex align-items-center">
-                            <div class="d-flex flex-column text-sweet text-left">
+                        <div class="media-body d-flex flex-md-row align-item-md-center flex-column align-items-end mr-2">
+                            
+                            <div class="d-flex flex-column text-sweet text-left flex-grow-1">
                                 <span class="h4">抹茶馬卡龍</span>
-                                <span class="h5 mb-0">NT$ 450</span>
+                                <span class="h5 text-center text-md-left mb-0">NT$ 450</span>
                             </div>
                     
-                            <div class="ml-auto text-center">
-                                <div class="cart__input__group">
-                                    <div class="input-group-prepend">
-                                        <button class="input-group-text cart__input__group--form-control">+</button>
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <button class="input-group-text cart__input__group--form-control">2</button>
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <button class="input-group-text cart__input__group--form-control">-</button>
-                                    </div>
+
+                            <div class="cart__input__group">
+                                <div class="input-group-prepend">
+                                    <button class="input-group-text cart__input__group--form-control">+</button>
                                 </div>
-                            </div>
-                    
-                            <div
-                                class="ml-auto d-none d-md-block align-items-center "
-                                style="line-height: 110px"
-                            >
-                                <span class="h5 mr-2">NT$ 450</span>
-                                <img
-                                    src="./images/downloads/trash.svg"
-                                    alt=""
-                                    srcset=""
-                                    class="mb-1"
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-bottom mt-2"></div>
-                    <div class="mr-auto d-block d-md-none d-flex justify-content-end">
-                        <div class="h4 pt-2 mb-0">NT$ 450</div>
-                    </div>
-                    <hr class="bg-white d-block d-md-none">
-                </div>
-                <div class="cart__body">
-                    <div class="cart__img media">
-                        <img
-                            src="https://bit.ly/2zKOP7w"
-                            class="mr-3"
-                            height="110px"
-                            style="max-width:100%"
-                        >
-                        <div class="media-body d-flex align-items-center">
-                            <div class="d-flex flex-column text-sweet text-left">
-                                <span class="h4">抹茶馬卡龍</span>
-                                <span class="h5 mb-0">NT$ 450</span>
-                            </div>
-                
-                            <div class="ml-auto text-center">
-                                <div class="cart__input__group">
-                                    <div class="input-group-prepend">
-                                        <button class="input-group-text cart__input__group--form-control">+</button>
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <button class="input-group-text cart__input__group--form-control">2</button>
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <button class="input-group-text cart__input__group--form-control">-</button>
-                                    </div>
+                                <div class="input-group-prepend">
+                                    <button class="input-group-text cart__input__group--form-control">2</button>
+                                </div>
+                                <div class="input-group-prepend">
+                                    <button class="input-group-text cart__input__group--form-control">-</button>
                                 </div>
                             </div>
                             
-                            <div
-                                class="ml-auto d-none d-md-block align-items-center"
-                                style="line-height: 110px"
+
+                        </div>
+                        <div
+                            class="ml-auto d-none d-md-block align-items-center py-3"
+                        >
+                            <span class="h5">NT$ 450</span>
+                            <img
+                                src="./images/downloads/trash.svg"
+                                alt=""
+                                srcset=""
+                                class="mb-1 ml-2"
                             >
-                                <span class="h5 mr-2">NT$ 350</span>
-                                <img
-                                    src="./images/downloads/trash.svg"
-                                    alt=""
-                                    srcset=""
-                                    class="mb-1"
-                                >
-                            </div>
                         </div>
                     </div>
                     <div class="border-bottom mt-2"></div>
@@ -192,45 +142,42 @@
                     <hr class="bg-white d-block d-md-none">
                 </div>
                 <div class="cart__body">
-                    <div class="cart__img media">
-                        <img
-                            src="https://bit.ly/2zKOP7w"
-                            class="mr-3"
-                            height="110px"
-                            style="max-width:100%"
-                        >
-                        <div class="media-body d-flex align-items-center">
-                            <div class="d-flex flex-column text-sweet text-left">
-                                <span class="h4">牛奶尬圈圈</span>
-                                <span class="h5 mb-0">NT$ 450</span>
+                    <div class="media d-flex align-items-center">
+                        <div
+                            class="mr-3 cart__img flex-grow-1 flex-md-grow-0"
+                            style="background-image:url(https://bit.ly/2NcDVuB)"
+                        ></div>
+                
+                        <div class="media-body d-flex flex-md-row align-item-md-center flex-column align-items-end mr-2">
+                
+                            <div class="d-flex flex-column text-sweet text-left flex-fill">
+                                <span class="h4">抹茶馬卡龍</span>
+                                <span class="h5 text-center text-md-left mb-0">NT$ 450</span>
                             </div>
                 
-                            <div class="ml-auto text-center">
-                                <div class="cart__input__group">
-                                    <div class="input-group-prepend">
-                                        <button class="input-group-text cart__input__group--form-control">+</button>
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <button class="input-group-text cart__input__group--form-control">1</button>
-                                    </div>
-                                    <div class="input-group-prepend">
-                                        <button class="input-group-text cart__input__group--form-control">-</button>
-                                    </div>
+                
+                            <div class="cart__input__group align-items-end ">
+                                <div class="input-group-prepend">
+                                    <button class="input-group-text cart__input__group--form-control">+</button>
+                                </div>
+                                <div class="input-group-prepend">
+                                    <button class="input-group-text cart__input__group--form-control">2</button>
+                                </div>
+                                <div class="input-group-prepend">
+                                    <button class="input-group-text cart__input__group--form-control">-</button>
                                 </div>
                             </div>
                 
-                            <div
-                                class="ml-auto d-none d-md-block align-items-center"
-                                style="line-height: 110px"
+                
+                        </div>
+                        <div class="ml-auto d-none d-md-block align-items-center py-3">
+                            <span class="h5">NT$ 450</span>
+                            <img
+                                src="./images/downloads/trash.svg"
+                                alt=""
+                                srcset=""
+                                class="mb-1 ml-2"
                             >
-                                <span class="h5 mr-2">NT$ 350</span>
-                                <img
-                                    src="./images/downloads/trash.svg"
-                                    alt=""
-                                    srcset=""
-                                    class="mb-1"
-                                >
-                            </div>
                         </div>
                     </div>
                     <div class="border-bottom mt-2"></div>
@@ -240,7 +187,6 @@
                     <hr class="bg-white d-block d-md-none">
                 </div>
             </div>
-            <!--訂單摘要-->
             <div class="col-md-4">
                 <div class="cartMsg">
                     <div class="cartMsg__body card-body">
@@ -271,7 +217,137 @@
             </a>
         </div>
     </div>
-
+    <!-- <section class="container my-md-5">
+        <div class="row carts">
+            <div class="col-md-8">
+                <h1 class="bg-primary-lighter h4 mb-0 py-4 text-center">
+                    您的購物車
+                </h1>
+                <div class="cart-row d-flex flex-column flex-md-row py-3">
+                    <div class="d-flex align-items-center flex-grow-1 mr-md-3">
+                        <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
+                            <div
+                                class="cart-image"
+                                style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80)"
+                            ></div>
+                        </div>
+                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
+                            <div class="flex-fill mr-md-4">
+                                <span class="h5">抹茶馬卡龍</span><br>
+                                <span>NT$ 450</span>
+                            </div>
+                            <div class="cart-control ml-md-auto mt-3 mt-md-0">
+                                <div class="input-group carts-input-group">
+                                    <div class="input-group-prepend">
+                                        <button
+                                            type="button"
+                                            class="btn btn-brand-light text-primary-light material-icons text-base-size"
+                                        >remove</button>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        value="2"
+                                    >
+                                    <div class="input-group-append">
+                                        <button
+                                            type="button"
+                                            class="btn btn-brand-light text-primary-light material-icons text-base-size"
+                                        >add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="price ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
+                        <a
+                            href="#"
+                            class="btn d-none d-md-block"
+                        ><span class="material-icons">delete_outline</span></a>
+                        <span class="h5 mb-0 mr-md-3">NT$ 900</span>
+                    </div>
+                </div>
+                <div class="cart-row d-flex flex-column flex-md-row py-3">
+                    <div class="d-flex align-items-center flex-grow-1 mr-md-3">
+                        <div class="my-4 mr-4 flex-grow-1 flex-md-grow-0">
+                            <div
+                                class="cart-image"
+                                style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80)"
+                            ></div>
+                        </div>
+                        <div class="d-flex align-items-md-center flex-column flex-md-row flex-md-grow-1">
+                            <div class="flex-fill mr-md-4">
+                                <span class="h5">抹茶馬卡龍</span><br>
+                                <span>NT$ 450</span>
+                            </div>
+                            <div class="cart-control ml-md-auto mt-3 mt-md-0">
+                                <div class="input-group carts-input-group">
+                                    <div class="input-group-prepend">
+                                        <button
+                                            type="button"
+                                            class="btn btn-brand-light text-primary-light material-icons text-base-size"
+                                        >remove</button>
+                                    </div>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        value="2"
+                                    >
+                                    <div class="input-group-append">
+                                        <button
+                                            type="button"
+                                            class="btn btn-brand-light text-primary-light material-icons text-base-size"
+                                        >add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="price ml-md-auto align-items-center py-3 justify-content-end d-flex flex-md-row-reverse">
+                        <a
+                            href="#"
+                            class="btn d-none d-md-block"
+                        ><span class="material-icons">delete_outline</span></a>
+                        <span class="h5 mb-0 mr-md-3">NT$ 900</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cartMsg">
+                    <div class="cartMsg__body card-body">
+                        <div class="cartMsg--title">訂單摘要</div>
+                        <hr class="bg-white d-none d-md-block">
+                        <div class="cartMsg__body--color">
+                            <div class="d-flex justify-content-between">
+                                <span>小計</span>
+                                <span>NT$ 2,700</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <span>運費</span>
+                                <span>NT$ 300</span>
+                            </div>
+                            <div class="h5 d-flex justify-content-between">
+                                <strong>總計</strong>
+                                <strong>NT$ 3,000</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-accent text-center btn-block setting-footer btn-lg h4 d-none d-md-block">
+                        <a href="checkout_1.html">登入帳號</a>
+                    </button>
+                </div>
+            </div>
+            <a
+                class="btn btn-accent text-center btn-block setting-footer btn-lg mb-0 d-block d-md-none text-primary"
+                href="checkout_1.html"
+                role="button"
+            >
+                <h4>登入帳號</h4>
+            </a>
+        </div>
+    </section> -->
 
     <!--訂閱你我的甜蜜郵件-->
     <div class="section bg-primary py-6">

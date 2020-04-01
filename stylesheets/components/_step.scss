@@ -1,5 +1,3 @@
-$complete: #2ECC71;
-// $active: #3498DB;
 $mute: #DFE3E4;
 
 .progress {
@@ -10,6 +8,7 @@ $mute: #DFE3E4;
   table-layout: fixed;
   width: 50%;
   color: darken($mute, 33%);
+  background-color: transparent;
   > li {
     position: relative;
     display: table-cell;
@@ -34,6 +33,7 @@ $mute: #DFE3E4;
       position: absolute;
       display: block;
       background: $mute;
+      //background:$primary;
       width: 100%;
       height: 0.5em;
       top: 1.25em;
@@ -43,17 +43,7 @@ $mute: #DFE3E4;
     &:last-child:after {
       display: none;
     }
-    // &.is-complete {
-    //   color: $complete;
-    //   &:before,
-    //   &:after {
-    //     color: $primary;
-    //     border:1px solid#fff;
-    //     background: $primary;
-    //   }
-    // }
     &.is-active {
-      // color: $active;
       &:before {
         color: #FFF;
         border:1px solid#fff;

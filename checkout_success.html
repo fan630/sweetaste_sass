@@ -23,33 +23,10 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
         <div class="container">
-            <a
-                class="navbar-brand d-none d-md-block"
-                href="index.html"
-            >
-                <img
-                    src="./images/downloads/logo-all-dark.svg"
-                    alt=""
-                    srcset=""
-                    height="40px"
-                >
-            </a>
-            <a
-                class="navbar-brand d-block d-md-none text-center order-2"
-                href="home.html"
-            >
-                <img
-                    src="./images/downloads/logotype-sm-dark.svg"
-                    alt=""
-                    srcset=""
-                    height="17.74px"
-                >
-            </a>
-    
             <button
-                class="navbar-toggler"
+                class="navbar-toggler d-md-none"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarNavAltMarkup"
@@ -60,13 +37,40 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
     
+            <a
+                class="navbar-brand"
+                href="home.html"
+            >
+                <img
+                    src="./images/downloads/logo-all-dark.svg"
+                    alt=""
+                    srcset=""
+                    height="40px"
+                    class="d-none d-md-block"
+                >
+                <img
+                    src="./images/downloads/logotype-sm-dark.svg"
+                    alt=""
+                    srcset=""
+                    height="17.74px"
+                    class="d-md-none d-block"
+                >
+            </a>
+    
+            <a
+                class="nav-item nav-link order-md-1 bg-cover icon-size"
+                href="cart.html"
+                style="background-image:url(./images/downloads/shopping_cart.svg)"
+            >
+            </a>
+    
             <div
                 class="collapse navbar-collapse"
                 id="navbarNavAltMarkup"
             >
                 <div class="navbar-nav ml-auto">
                     <a
-                        class="nav-item nav-link"
+                        class="nav-item nav-link active"
                         href="home.html"
                     >首頁
                     </a>
@@ -80,19 +84,12 @@
                     >登入</a>
                 </div>
             </div>
-            <a
-                class="nav-item nav-link order-3 icon-size bg-cover"
-                href="cart.html"
-                style="background-image:url(./images/downloads/shopping_cart.svg)"
-                tabindex="-1"
-            >
-            </a>
         </div>
     </nav>
 
     <div class="container my-md-4 bg-cover box1" style="background-image: url(https://bit.ly/2P7GhNd)">
         <div class="row d-flex align-items-center flex-column justify-content-center h-100">
-            <ol class="progress">
+            <ol class="progress mb-3">
                 <li
                     class="is-active"
                     data-step="v"
@@ -106,15 +103,16 @@
             
                 </li>
                 <li
-                    data-step="●"
+                    data-step="v"
                     class="is-active progress__last"
                 >
                 </li>
             </ol>
             <div class="h1 text-sweet">付款成功</div>
             <div class="mt-4 d-none d-md-block text-center">
-                <a class="btn text-primary h3 bg-accent px-6 py-3" href="home.html"
-                  role="button">繼續逛逛
+                <a class="btn text-primary bg-accent px-6 py-3" href="home.html"
+                  role="button">
+                  <h3>繼續逛逛</h3>
                 </a>
             </div>
         </div>
